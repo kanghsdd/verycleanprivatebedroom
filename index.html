@@ -2,12 +2,210 @@
 
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>KANG HYUNGSEOK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KANG HYUNGSEOK</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#f5f5f5;
+    color:#222;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:white;
+}
+
+.hero h1{
+    font-size:72px;
+    letter-spacing:6px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#666;
+    margin-bottom:40px;
+}
+
+.button{
+    display:inline-block;
+    padding:15px 40px;
+    border:2px solid black;
+    text-decoration:none;
+    color:black;
+    transition:.3s;
+}
+
+.button:hover{
+    background:black;
+    color:white;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:120px 30px;
+}
+
+h2{
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.about{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+
+    background:white;
+    border-radius:12px;
+    padding:40px;
+    min-height:220px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+footer{
+
+    text-align:center;
+
+    padding:80px;
+
+    color:#777;
+
+}
+
+</style>
+
 </head>
 
 <body>
-    <h1>KANG HYUNGSEOK</h1>
-    <p>Artist / OutSystems Developer</p>
+
+<header>
+
+<div class="hero">
+
+<h1>KANG HYUNGSEOK</h1>
+
+<p>
+Artist · OutSystems Developer
+</p>
+
+<a class="button" href="#about">
+
+View Portfolio
+
+</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2>About</h2>
+
+<div class="about">
+
+안녕하세요.
+
+한국에서 패션디자인을 전공하고,
+현재는 일본에서 OutSystems Developer로 일하고 있습니다.
+
+예술과 기술의 경계를 넘나드는 작업을 하고 있습니다.
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Artwork</h2>
+
+<div class="grid">
+
+<div class="card">
+Artwork 01
+</div>
+
+<div class="card">
+Artwork 02
+</div>
+
+<div class="card">
+Artwork 03
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Development</h2>
+
+<div class="grid">
+
+<div class="card">
+OutSystems
+</div>
+
+<div class="card">
+Portfolio
+</div>
+
+<div class="card">
+GitHub Projects
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 KANG HYUNGSEOK
+
+</footer>
+
 </body>
 </html>
